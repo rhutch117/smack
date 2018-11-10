@@ -17,6 +17,7 @@
 		8187BAF8219696890049C911 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187BAF7219696890049C911 /* GradientView.swift */; };
 		8187BAFB21969D3E0049C911 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187BAFA21969D3E0049C911 /* Constants.swift */; };
 		8187BAFD2196A0C80049C911 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187BAFC2196A0C80049C911 /* LoginVC.swift */; };
+		8187BAFF2196A2830049C911 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187BAFE2196A2830049C911 /* CreateAccountVC.swift */; };
 		BB95CE039E5D3291997179B6 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1221A984002FE4DD6502C9B3 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		8187BAF7219696890049C911 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8187BAFA21969D3E0049C911 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8187BAFC2196A0C80049C911 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8187BAFE2196A2830049C911 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				8187BAF3219693CE0049C911 /* ChatVC.swift */,
 				8187BAF5219693DC0049C911 /* ChannelVC.swift */,
 				8187BAFC2196A0C80049C911 /* LoginVC.swift */,
+				8187BAFE2196A2830049C911 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				8187BAF6219693DC0049C911 /* ChannelVC.swift in Sources */,
 				8187BAF4219693CE0049C911 /* ChatVC.swift in Sources */,
+				8187BAFF2196A2830049C911 /* CreateAccountVC.swift in Sources */,
 				8187BAFD2196A0C80049C911 /* LoginVC.swift in Sources */,
 				8187BAF8219696890049C911 /* GradientView.swift in Sources */,
 				815A085721968D070061B97B /* AppDelegate.swift in Sources */,
