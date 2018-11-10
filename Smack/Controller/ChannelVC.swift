@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChannelVC.swift
 //  Smack
 //
 //  Created by Ryan Hutchison on 11/9/18.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChannelVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.revealViewController()?.rearViewRevealWidth = self.view.frame.width - 60
     }
-
-
 }
-
