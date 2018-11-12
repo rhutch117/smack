@@ -47,15 +47,26 @@ class UserDataService {
         let defaultColor = UIColor.lightGray
         
         guard let rUnwrapped = r else { return defaultColor }
-        guard let gUnwrapped = b else { return defaultColor }
-        guard let bUnwrapped = g else { return defaultColor }
+        guard let gUnwrapped = g else { return defaultColor }
+        guard let bUnwrapped = b else { return defaultColor }
         guard let aUnwrapped = a else { return defaultColor }
         
         let rFloat = CGFloat(rUnwrapped.doubleValue)
         let gFloat = CGFloat(gUnwrapped.doubleValue)
         let bFloat = CGFloat(bUnwrapped.doubleValue)
         let aFloat = CGFloat(aUnwrapped.doubleValue)
-        
+
         return UIColor(red: rFloat, green: gFloat, blue: bFloat, alpha: aFloat)
+    }
+    
+    func logoutUser() {
+        id = ""
+        avatarName = ""
+        avatarColor = ""
+        email = ""
+        name = ""
+        AuthService.instance.isLoggedIn = false
+        AuthService.instance.userEmail = ""
+        AuthService.instance.authToken = ""
     }
 }
