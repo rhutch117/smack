@@ -11,7 +11,7 @@ import UIKit
 class CreateAccountVC: UIViewController {
 
     // Outlets
-    @IBOutlet weak var usernameTxt: UITextField!
+    @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
@@ -42,7 +42,7 @@ class CreateAccountVC: UIViewController {
         spinner.isHidden = false
         spinner.startAnimating()
         
-        guard let name = usernameTxt.text, usernameTxt.text != "" else { return }
+        guard let name = userName.text, userName.text != "" else { return }
         guard let email = emailTxt.text , emailTxt.text != "" else { return }
         guard let pass = passTxt.text, passTxt.text != "" else { return }
         
@@ -88,7 +88,7 @@ class CreateAccountVC: UIViewController {
     
     func setupView() {
         spinner.isHidden = true
-        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [.foregroundColor : smackPurplePlaceholder])
+        userName.attributedPlaceholder = NSAttributedString(string: "username", attributes: [.foregroundColor : smackPurplePlaceholder])
         emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [.foregroundColor : smackPurplePlaceholder])
         passTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [.foregroundColor : smackPurplePlaceholder])
         

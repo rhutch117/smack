@@ -231,6 +231,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="XQT-bD-oGN" eventType="touchUpInside" id="0Ot-Sc-fxm"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="kpz-oD-Pf5">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
@@ -282,10 +285,16 @@
                                     <action selector="createAccountBtnPressed:" destination="XQT-bD-oGN" eventType="touchUpInside" id="JdZ-Mc-TyI"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ss8-mh-hhG">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hIi-fY-QVE" firstAttribute="top" secondItem="w5X-ib-Mff" secondAttribute="bottom" id="0Y8-k5-evE"/>
+                            <constraint firstItem="Ss8-mh-hhG" firstAttribute="centerX" secondItem="KrU-uF-Pg8" secondAttribute="centerX" id="1HL-bU-LVW"/>
+                            <constraint firstItem="Ss8-mh-hhG" firstAttribute="centerY" secondItem="KrU-uF-Pg8" secondAttribute="centerY" constant="-100" id="5fn-gw-ntv"/>
                             <constraint firstItem="w8g-VS-cOB" firstAttribute="trailing" secondItem="oFI-SZ-C08" secondAttribute="trailing" constant="12" id="Dec-Xx-P39"/>
                             <constraint firstItem="hIi-fY-QVE" firstAttribute="centerX" secondItem="KrU-uF-Pg8" secondAttribute="centerX" id="XCP-EV-1Ig"/>
                             <constraint firstItem="oFI-SZ-C08" firstAttribute="top" secondItem="w8g-VS-cOB" secondAttribute="top" constant="8" id="Xc8-jh-3gk"/>
@@ -299,6 +308,9 @@
                         <viewLayoutGuide key="safeArea" id="w8g-VS-cOB"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="J5s-di-AVb" id="neS-s0-fdF"/>
+                        <outlet property="spinner" destination="Ss8-mh-hhG" id="owp-Yh-WId"/>
+                        <outlet property="userEmailTxt" destination="WNs-oT-xIL" id="tZO-gb-kG2"/>
                         <segue destination="Vq4-8s-3Cq" kind="show" identifier="toCreateAccount" id="EdL-Qp-qHe"/>
                     </connections>
                 </viewController>
@@ -467,7 +479,7 @@
                         <outlet property="passTxt" destination="bZr-Ig-lR8" id="UQm-R4-kAi"/>
                         <outlet property="spinner" destination="vSy-Pf-7Tt" id="3PA-yP-r3c"/>
                         <outlet property="userImg" destination="LWL-rY-dRX" id="FGW-xM-BZc"/>
-                        <outlet property="usernameTxt" destination="VGB-gV-Cyf" id="tTj-Kb-bwQ"/>
+                        <outlet property="userName" destination="VGB-gV-Cyf" id="tTj-Kb-bwQ"/>
                         <segue destination="Mns-gW-hEE" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="mwd-MT-pYz"/>
                         <segue destination="hfA-Q6-KTQ" kind="show" identifier="toAvatarPicker" id="hAS-hS-W9O"/>
                     </connections>
