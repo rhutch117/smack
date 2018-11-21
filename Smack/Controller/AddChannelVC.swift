@@ -23,7 +23,7 @@ class AddChannelVC: UIViewController {
     }
     
     func setupView() {
-        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(AddChanVC.closeTap(_:)))
+        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(AddChannelVC.closeTap(_:)))
         bgView.addGestureRecognizer(closeTouch)
         
         nameTxt.attributedPlaceholder = NSAttributedString(string: "name", attributes: [.foregroundColor: smackPurplePlaceholder])
@@ -40,5 +40,12 @@ class AddChannelVC: UIViewController {
     }
     
     @IBAction func createChannelPressed(_ sender: Any) {
+        guard let channelName = nameTxt.text , channelName != "" else { return }
+        guard let channelDesc = chanDescTxt.text else { return }
+        SocketService.instance.addChannel(channelName: channelName, channelDescription: channelDesc) { (success) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
 }
