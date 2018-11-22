@@ -19,6 +19,7 @@
 		81729A5B21A4DA8300220123 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81729A5A21A4DA8300220123 /* SocketService.swift */; };
 		817430E52199E3ED00C67278 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817430E32199E3ED00C67278 /* ProfileVC.swift */; };
 		817430E62199E3ED00C67278 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817430E42199E3ED00C67278 /* ProfileVC.xib */; };
+		818185A021A666260047AE08 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8181859F21A666260047AE08 /* Message.swift */; };
 		8187BAEF219691FA0049C911 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8187BAED219691F90049C911 /* SWRevealViewController.m */; };
 		8187BAF4219693CE0049C911 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187BAF3219693CE0049C911 /* ChatVC.swift */; };
 		8187BAF6219693DC0049C911 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187BAF5219693DC0049C911 /* ChannelVC.swift */; };
@@ -53,6 +54,7 @@
 		81729A5A21A4DA8300220123 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		817430E32199E3ED00C67278 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		817430E42199E3ED00C67278 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		8181859F21A666260047AE08 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8187BAEC219691F90049C911 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		8187BAED219691F90049C911 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8187BAEE219691FA0049C911 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				8192F3A9219BB700009C1104 /* Channel.swift */,
+				8181859F21A666260047AE08 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				8187BAF6219693DC0049C911 /* ChannelVC.swift in Sources */,
 				813E3A7E2198E79300C9F53D /* AvatarPickerVC.swift in Sources */,
 				81ECD23C2197C69400803550 /* RoundedButton.swift in Sources */,
+				818185A021A666260047AE08 /* Message.swift in Sources */,
 				8192F3AA219BB700009C1104 /* Channel.swift in Sources */,
 				813E3A822199201300C9F53D /* CircleImage.swift in Sources */,
 				8192F3A8219BB6C9009C1104 /* MessageService.swift in Sources */,
