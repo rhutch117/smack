@@ -68,7 +68,6 @@ class MessageService {
                 completion(false)
             }
         }
-        
     }
     
     func clearMessages() {

@@ -16,7 +16,6 @@ class AddChannelVC: UIViewController {
     @IBOutlet weak var chanDescTxt: UITextField!
     @IBOutlet weak var bgView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -33,7 +32,6 @@ class AddChannelVC: UIViewController {
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
-    
     
     @IBAction func closeModalPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
